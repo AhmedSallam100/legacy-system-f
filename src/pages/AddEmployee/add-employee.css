@@ -1,0 +1,134 @@
+.add-page {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.add-page .add-form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 10px;
+}
+.add-page .add-form .form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.add-page .add-form .form-inputs .form-input {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+.add-page .add-form button {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+.add-page .add-form button * {
+  color: var(--white-color);
+}
+.table-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.table-head form {
+  padding: 8px;
+  background-color: var(--grey-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 300px;
+  justify-content: space-between;
+}
+.table-head form button {
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+.table-head form button i {
+  color: var(--white-color);
+}
+.table-head form select {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--white-color);
+}
+.table_component {
+  overflow: auto;
+  width: 100%;
+}
+/* .table_component::-webkit-scrollbar {
+  width: 2px !important;
+} */
+.table_component table {
+  border: 1px solid #dededf;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0px;
+  text-align: left;
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: separate;
+}
+.table_component h1 {
+  font-size: 24px;
+  color: var(--main-color);
+}
+.table_component th {
+  color: var(--black-color);
+  padding: 15px;
+  text-align: center;
+  background-color: #ebecee;
+}
+.table_component td {
+  border: 1px solid var(--box2-color);
+  color: #000000;
+  padding: 15px;
+  text-align: center;
+  border-left: 0;
+  border-bottom: 0;
+  font-size: 14px;
+}
+.table_component td:last-child {
+  border-right: 0;
+}
+.table_component td.action-icons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.table_component td.action-icons div i {
+  color: var(--white-color);
+  padding: 5px 8px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+.table_component td.action-icons button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.table_component td.action-icons button i {
+  background-color: var(--main-color);
+}
+@media (max-width: 1065px) {
+  .add-page .add-form,
+  .add-page .add-form .form-inputs .form-input {
+    width: 100%;
+  }
+}

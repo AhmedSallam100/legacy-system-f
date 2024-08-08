@@ -1,0 +1,26 @@
+.main-title {
+  position: relative;
+  width: fit-content;
+  font-size: 24px;
+  font-weight: 500;
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 40%;
+  height: 3px;
+  animation: width 3s infinite ease-in-out;
+  background-color: var(--main-color);
+}
+@keyframes width {
+  0% {
+    width: 40%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 40%;
+  }
+}

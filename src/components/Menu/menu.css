@@ -1,0 +1,34 @@
+.mobile-menu {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  border-radius: 16px 16px 0 0;
+  background-color: var(--white-color);
+  box-shadow: 0px -8px 120px -24px rgba(0, 0, 0, 0.75);
+}
+.mobile-menu .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.mobile-menu .container .mobile-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-menu .container .mobile-icon i {
+  font-style: 20px;
+}
+.mobile-menu .container .mobile-icon span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-left: 5px;
+}
+@media (max-width: 1065px) {
+  .mobile-menu {
+    display: block;
+  }
+}
